@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F3348F1CD18E6B00AD068E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3348E1CD18E6B00AD068E /* AppDelegate.swift */; };
+		04F334911CD18E6B00AD068E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F334901CD18E6B00AD068E /* MasterViewController.swift */; };
+		04F334931CD18E6B00AD068E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F334921CD18E6B00AD068E /* DetailViewController.swift */; };
+		04F334961CD18E6B00AD068E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F334941CD18E6B00AD068E /* Main.storyboard */; };
+		04F334981CD18E6B00AD068E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F334971CD18E6B00AD068E /* Assets.xcassets */; };
+		04F3349B1CD18E6C00AD068E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F334991CD18E6C00AD068E /* LaunchScreen.storyboard */; };
+		04F334A61CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F334A51CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationTests.swift */; };
+		04F334B11CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F334B01CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04F334A21CD18E6C00AD068E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F334831CD18E6B00AD068E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F3348A1CD18E6B00AD068E;
+			remoteInfo = "Mobile Jazz iOS Application";
+		};
+		04F334AD1CD18E6C00AD068E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F334831CD18E6B00AD068E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F3348A1CD18E6B00AD068E;
+			remoteInfo = "Mobile Jazz iOS Application";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F3348B1CD18E6B00AD068E /* Mobile Jazz iOS Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Jazz iOS Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F3348E1CD18E6B00AD068E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04F334901CD18E6B00AD068E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		04F334921CD18E6B00AD068E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		04F334951CD18E6B00AD068E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F334971CD18E6B00AD068E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F3349A1CD18E6C00AD068E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F3349C1CD18E6C00AD068E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F334A11CD18E6C00AD068E /* Mobile Jazz iOS ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Jazz iOS ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F334A51CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Jazz_iOS_ApplicationTests.swift; sourceTree = "<group>"; };
+		04F334A71CD18E6C00AD068E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F334AC1CD18E6C00AD068E /* Mobile Jazz iOS ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Jazz iOS ApplicationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F334B01CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Jazz_iOS_ApplicationUITests.swift; sourceTree = "<group>"; };
+		04F334B21CD18E6C00AD068E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F334881CD18E6B00AD068E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F3349E1CD18E6C00AD068E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F334A91CD18E6C00AD068E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F334821CD18E6B00AD068E = {
+			isa = PBXGroup;
+			children = (
+				04F3348D1CD18E6B00AD068E /* Mobile Jazz iOS Application */,
+				04F334A41CD18E6C00AD068E /* Mobile Jazz iOS ApplicationTests */,
+				04F334AF1CD18E6C00AD068E /* Mobile Jazz iOS ApplicationUITests */,
+				04F3348C1CD18E6B00AD068E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F3348C1CD18E6B00AD068E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F3348B1CD18E6B00AD068E /* Mobile Jazz iOS Application.app */,
+				04F334A11CD18E6C00AD068E /* Mobile Jazz iOS ApplicationTests.xctest */,
+				04F334AC1CD18E6C00AD068E /* Mobile Jazz iOS ApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F3348D1CD18E6B00AD068E /* Mobile Jazz iOS Application */ = {
+			isa = PBXGroup;
+			children = (
+				04F3348E1CD18E6B00AD068E /* AppDelegate.swift */,
+				04F334901CD18E6B00AD068E /* MasterViewController.swift */,
+				04F334921CD18E6B00AD068E /* DetailViewController.swift */,
+				04F334941CD18E6B00AD068E /* Main.storyboard */,
+				04F334971CD18E6B00AD068E /* Assets.xcassets */,
+				04F334991CD18E6C00AD068E /* LaunchScreen.storyboard */,
+				04F3349C1CD18E6C00AD068E /* Info.plist */,
+			);
+			path = "Mobile Jazz iOS Application";
+			sourceTree = "<group>";
+		};
+		04F334A41CD18E6C00AD068E /* Mobile Jazz iOS ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				04F334A51CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationTests.swift */,
+				04F334A71CD18E6C00AD068E /* Info.plist */,
+			);
+			path = "Mobile Jazz iOS ApplicationTests";
+			sourceTree = "<group>";
+		};
+		04F334AF1CD18E6C00AD068E /* Mobile Jazz iOS ApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04F334B01CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationUITests.swift */,
+				04F334B21CD18E6C00AD068E /* Info.plist */,
+			);
+			path = "Mobile Jazz iOS ApplicationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F3348A1CD18E6B00AD068E /* Mobile Jazz iOS Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F334B51CD18E6C00AD068E /* Build configuration list for PBXNativeTarget "Mobile Jazz iOS Application" */;
+			buildPhases = (
+				04F334871CD18E6B00AD068E /* Sources */,
+				04F334881CD18E6B00AD068E /* Frameworks */,
+				04F334891CD18E6B00AD068E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mobile Jazz iOS Application";
+			productName = "Mobile Jazz iOS Application";
+			productReference = 04F3348B1CD18E6B00AD068E /* Mobile Jazz iOS Application.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04F334A01CD18E6C00AD068E /* Mobile Jazz iOS ApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F334B81CD18E6C00AD068E /* Build configuration list for PBXNativeTarget "Mobile Jazz iOS ApplicationTests" */;
+			buildPhases = (
+				04F3349D1CD18E6C00AD068E /* Sources */,
+				04F3349E1CD18E6C00AD068E /* Frameworks */,
+				04F3349F1CD18E6C00AD068E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F334A31CD18E6C00AD068E /* PBXTargetDependency */,
+			);
+			name = "Mobile Jazz iOS ApplicationTests";
+			productName = "Mobile Jazz iOS ApplicationTests";
+			productReference = 04F334A11CD18E6C00AD068E /* Mobile Jazz iOS ApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04F334AB1CD18E6C00AD068E /* Mobile Jazz iOS ApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F334BB1CD18E6C00AD068E /* Build configuration list for PBXNativeTarget "Mobile Jazz iOS ApplicationUITests" */;
+			buildPhases = (
+				04F334A81CD18E6C00AD068E /* Sources */,
+				04F334A91CD18E6C00AD068E /* Frameworks */,
+				04F334AA1CD18E6C00AD068E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F334AE1CD18E6C00AD068E /* PBXTargetDependency */,
+			);
+			name = "Mobile Jazz iOS ApplicationUITests";
+			productName = "Mobile Jazz iOS ApplicationUITests";
+			productReference = 04F334AC1CD18E6C00AD068E /* Mobile Jazz iOS ApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F334831CD18E6B00AD068E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Vahid Ajimine";
+				TargetAttributes = {
+					04F3348A1CD18E6B00AD068E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					04F334A01CD18E6C00AD068E = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 04F3348A1CD18E6B00AD068E;
+					};
+					04F334AB1CD18E6C00AD068E = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 04F3348A1CD18E6B00AD068E;
+					};
+				};
+			};
+			buildConfigurationList = 04F334861CD18E6B00AD068E /* Build configuration list for PBXProject "Mobile Jazz iOS Application" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F334821CD18E6B00AD068E;
+			productRefGroup = 04F3348C1CD18E6B00AD068E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F3348A1CD18E6B00AD068E /* Mobile Jazz iOS Application */,
+				04F334A01CD18E6C00AD068E /* Mobile Jazz iOS ApplicationTests */,
+				04F334AB1CD18E6C00AD068E /* Mobile Jazz iOS ApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F334891CD18E6B00AD068E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F3349B1CD18E6C00AD068E /* LaunchScreen.storyboard in Resources */,
+				04F334981CD18E6B00AD068E /* Assets.xcassets in Resources */,
+				04F334961CD18E6B00AD068E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F3349F1CD18E6C00AD068E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F334AA1CD18E6C00AD068E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F334871CD18E6B00AD068E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F334931CD18E6B00AD068E /* DetailViewController.swift in Sources */,
+				04F334911CD18E6B00AD068E /* MasterViewController.swift in Sources */,
+				04F3348F1CD18E6B00AD068E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F3349D1CD18E6C00AD068E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F334A61CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F334A81CD18E6C00AD068E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F334B11CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F334A31CD18E6C00AD068E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F3348A1CD18E6B00AD068E /* Mobile Jazz iOS Application */;
+			targetProxy = 04F334A21CD18E6C00AD068E /* PBXContainerItemProxy */;
+		};
+		04F334AE1CD18E6C00AD068E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F3348A1CD18E6B00AD068E /* Mobile Jazz iOS Application */;
+			targetProxy = 04F334AD1CD18E6C00AD068E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04F334941CD18E6B00AD068E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F334951CD18E6B00AD068E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04F334991CD18E6C00AD068E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F3349A1CD18E6C00AD068E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04F334B31CD18E6C00AD068E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04F334B41CD18E6C00AD068E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F334B61CD18E6C00AD068E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mobile Jazz iOS Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vahid.ajimine.llc.Mobile-Jazz-iOS-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04F334B71CD18E6C00AD068E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mobile Jazz iOS Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vahid.ajimine.llc.Mobile-Jazz-iOS-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04F334B91CD18E6C00AD068E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Mobile Jazz iOS ApplicationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vahid.ajimine.llc.Mobile-Jazz-iOS-ApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Jazz iOS Application.app/Mobile Jazz iOS Application";
+			};
+			name = Debug;
+		};
+		04F334BA1CD18E6C00AD068E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Mobile Jazz iOS ApplicationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vahid.ajimine.llc.Mobile-Jazz-iOS-ApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Jazz iOS Application.app/Mobile Jazz iOS Application";
+			};
+			name = Release;
+		};
+		04F334BC1CD18E6C00AD068E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Mobile Jazz iOS ApplicationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vahid.ajimine.llc.Mobile-Jazz-iOS-ApplicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Mobile Jazz iOS Application";
+			};
+			name = Debug;
+		};
+		04F334BD1CD18E6C00AD068E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Mobile Jazz iOS ApplicationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vahid.ajimine.llc.Mobile-Jazz-iOS-ApplicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Mobile Jazz iOS Application";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F334861CD18E6B00AD068E /* Build configuration list for PBXProject "Mobile Jazz iOS Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F334B31CD18E6C00AD068E /* Debug */,
+				04F334B41CD18E6C00AD068E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F334B51CD18E6C00AD068E /* Build configuration list for PBXNativeTarget "Mobile Jazz iOS Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F334B61CD18E6C00AD068E /* Debug */,
+				04F334B71CD18E6C00AD068E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04F334B81CD18E6C00AD068E /* Build configuration list for PBXNativeTarget "Mobile Jazz iOS ApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F334B91CD18E6C00AD068E /* Debug */,
+				04F334BA1CD18E6C00AD068E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04F334BB1CD18E6C00AD068E /* Build configuration list for PBXNativeTarget "Mobile Jazz iOS ApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F334BC1CD18E6C00AD068E /* Debug */,
+				04F334BD1CD18E6C00AD068E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F334831CD18E6B00AD068E /* Project object */;
+}
