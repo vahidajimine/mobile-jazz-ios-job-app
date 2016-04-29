@@ -15,6 +15,7 @@
 		04F3349B1CD18E6C00AD068E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F334991CD18E6C00AD068E /* LaunchScreen.storyboard */; };
 		04F334A61CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F334A51CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationTests.swift */; };
 		04F334B11CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F334B01CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationUITests.swift */; };
+		04F334BF1CD223FF00AD068E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F334BE1CD223FF00AD068E /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		04F334AC1CD18E6C00AD068E /* Mobile Jazz iOS ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Jazz iOS ApplicationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F334B01CD18E6C00AD068E /* Mobile_Jazz_iOS_ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Jazz_iOS_ApplicationUITests.swift; sourceTree = "<group>"; };
 		04F334B21CD18E6C00AD068E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F334BE1CD223FF00AD068E /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				04F334971CD18E6B00AD068E /* Assets.xcassets */,
 				04F334991CD18E6C00AD068E /* LaunchScreen.storyboard */,
 				04F3349C1CD18E6C00AD068E /* Info.plist */,
+				04F334BE1CD223FF00AD068E /* Data.swift */,
 			);
 			path = "Mobile Jazz iOS Application";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				04F334931CD18E6B00AD068E /* DetailViewController.swift in Sources */,
 				04F334911CD18E6B00AD068E /* MasterViewController.swift in Sources */,
 				04F3348F1CD18E6B00AD068E /* AppDelegate.swift in Sources */,
+				04F334BF1CD223FF00AD068E /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
