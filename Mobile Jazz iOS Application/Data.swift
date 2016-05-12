@@ -10,10 +10,22 @@
 
 import UIKit
 import Foundation
+
+let sharedDataInstance: RESTData = RESTData.sharedInstance
+
+enum teams: String {
+    case android = "android"
+    case ios = "ios"
+    case windows = "windows"
+    case backend = "backend"
+    case frontend = "frontend"
+    case design = "design"
+}
+
 /// Data Singleton `key:value` pair to be sent over a `POST` call
-class Data {
+class RESTData {
     /// Singleton instance
-    static let data = Data()
+    static let sharedInstance = RESTData()
     
     /** Set of all the keys to be passed in the POST JSON request
      
@@ -33,21 +45,12 @@ class Data {
         static let set: Set = [keys.about, keys.email, keys.name, keys.teams, keys.urls]
     }
     
-    enum teams: String {
-        case android = "android"
-        case ios = "ios"
-        case windows = "windows"
-        case backend = "backend"
-        case frontend = "frontend"
-        case design = "design"
-    }
-    
     //MARK: - Property values
     var nameValue:String?
     var emailValue:String?
     var aboutValue:String?
     var urlsValue:[String]?
-    var teamsValue:[String]?
+    var teamsValue:[teams]?
     
     //MARK: - Initializer
     private init () {
@@ -64,16 +67,16 @@ class Data {
             if self.isDataReady {
                 for key in keys.set {
                     switch key {
-                    case .name:
-                        jsonParams[key.rawValue] = self.nameValue
-                    case .email:
-                        jsonParams[key.rawValue] = self.emailValue
-                    case .about:
-                        jsonParams[key.rawValue] = self.aboutValue
-                    case .urls:
-                        jsonParams[key.rawValue] = self.urlsValue
-                    case .teams:
-                        jsonParams[key.rawValue] = self.teamsValue
+                        case .name:
+                            jsonParams[key.rawValue] = self.nameValue
+                        case .email:
+                            jsonParams[key.rawValue] = self.emailValue
+                        case .about:
+                            jsonParams[key.rawValue] = self.aboutValue
+                        case .urls:
+                            jsonParams[key.rawValue] = self.urlsValue
+                        case .teams:
+                            jsonParams[key.rawValue] = self.teamsString
                     }
                 }
             }
@@ -83,7 +86,7 @@ class Data {
     
     //MARK: - Helper methods
     
-    /// If all the parameters have been set, then
+    /// If all the parameters have been set, then return true. Else returns false.
     var isDataReady:Bool {
         get {
             return self.aboutValue == nil ?
@@ -91,8 +94,24 @@ class Data {
                 false : self.nameValue == nil ?
                 false : self.teamsValue == nil ?
                 false : self.urlsValue == nil ?
+                false : self.teamsValue?.count > 0 ?
+                false : self.urlsValue?.count > 0 ?
                 false : true
         }
     }
-
+    
+    private var teamsString: [String]? {
+        get {
+            if let teamList = self.teamsValue {
+                var tempTeams: [String] = []
+                for team in teamList {
+                    tempTeams.append(team.rawValue)
+                }
+                return tempTeams
+            } else {
+                return nil
+            }
+        }
+    }
+    //TODO: Add better logic for case by case scenario of nils for the member variable optionals to let user know where they need to add info for the application process
 }
