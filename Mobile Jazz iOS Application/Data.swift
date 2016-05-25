@@ -13,7 +13,7 @@ import Foundation
 
 let sharedDataInstance: RESTData = RESTData.sharedInstance
 
-enum teams: String {
+enum Teams: String {
     case android = "android"
     case ios = "ios"
     case windows = "windows"
@@ -22,28 +22,30 @@ enum teams: String {
     case design = "design"
 }
 
+/** Set of all the keys to be passed in the POST JSON request
+ 
+ name: Your real name as a String
+ email: Your e-mail address where we can contact you as a String
+ about: Why you think you’re the right person to get the job done, String
+ urls: Array of Strings, with URLs describing yourself. You can include as many as you want, like your LinkedIn profile, GitHub, BitBucket, MasterBranch, etc.
+ teams: Array of Strings, with one or many teams that apply to teams that you wish to apply for. The values must be amongst the following: android, ios, windows, backend, frontend, design
+ */
+
+enum Keys: String {
+    case name = "name"
+    case email = "email"
+    case about = "about"
+    case urls = "urls"
+    case teams = "teams"
+    static let set: Set = [Keys.about, Keys.email, Keys.name, Keys.teams, Keys.urls]
+}
+
 /// Data Singleton `key:value` pair to be sent over a `POST` call
 class RESTData {
     /// Singleton instance
     static let sharedInstance = RESTData()
     
-    /** Set of all the keys to be passed in the POST JSON request
-     
-     name: Your real name as a String
-     email: Your e-mail address where we can contact you as a String
-     about: Why you think you’re the right person to get the job done, String
-     urls: Array of Strings, with URLs describing yourself. You can include as many as you want, like your LinkedIn profile, GitHub, BitBucket, MasterBranch, etc.
-     teams: Array of Strings, with one or many teams that apply to teams that you wish to apply for. The values must be amongst the following: android, ios, windows, backend, frontend, design
-     */
     
-    enum keys: String {
-        case name = "name"
-        case email = "email"
-        case about = "about"
-        case urls = "urls"
-        case teams = "teams"
-        static let set: Set = [keys.about, keys.email, keys.name, keys.teams, keys.urls]
-    }
     
     //MARK: - Property values
     //TODO: Create Struct for these method variables
@@ -51,7 +53,7 @@ class RESTData {
     var emailValue:String?
     var aboutValue:String?
     var urlsValue:[String]?
-    var teamsValue:[teams]?
+    var teamsValue:[Teams]?
     
     //MARK: - Initializer
     private init () {
@@ -66,7 +68,7 @@ class RESTData {
         get {
             var jsonParams:[String: AnyObject] = [:]
             if self.isDataReady {
-                for key in keys.set {
+                for key in Keys.set {
                     switch key {
                         case .name:
                             jsonParams[key.rawValue] = self.nameValue
