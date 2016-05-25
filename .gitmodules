@@ -1,0 +1,3 @@
+[submodule "Mobile Jazz iOS Application/RESTController"]
+	path = Mobile Jazz iOS Application/RESTController
+	url = https://github.com/vahidajimine/RESTController.git
