@@ -46,6 +46,7 @@ class RESTData {
     }
     
     //MARK: - Property values
+    //TODO: Create Struct for these method variables
     var nameValue:String?
     var emailValue:String?
     var aboutValue:String?
