@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04795D661CF5936700D891B8 /* RESTController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04795D651CF5936700D891B8 /* RESTController.swift */; };
+		04795D691CF59AB900D891B8 /* EnumsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04795D681CF59AB900D891B8 /* EnumsAndExtensions.swift */; };
 		04F3348F1CD18E6B00AD068E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3348E1CD18E6B00AD068E /* AppDelegate.swift */; };
 		04F334911CD18E6B00AD068E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F334901CD18E6B00AD068E /* MasterViewController.swift */; };
 		04F334931CD18E6B00AD068E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F334921CD18E6B00AD068E /* DetailViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		04795D651CF5936700D891B8 /* RESTController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RESTController.swift; path = RESTController/RESTController.swift; sourceTree = "<group>"; };
+		04795D681CF59AB900D891B8 /* EnumsAndExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumsAndExtensions.swift; sourceTree = "<group>"; };
 		04F3348B1CD18E6B00AD068E /* Mobile Jazz iOS Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Jazz iOS Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F3348E1CD18E6B00AD068E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F334901CD18E6B00AD068E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				04F3349C1CD18E6C00AD068E /* Info.plist */,
 				04F334BE1CD223FF00AD068E /* Data.swift */,
 				04795D671CF5937C00D891B8 /* Submodules */,
+				04795D681CF59AB900D891B8 /* EnumsAndExtensions.swift */,
 			);
 			path = "Mobile Jazz iOS Application";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				04F334911CD18E6B00AD068E /* MasterViewController.swift in Sources */,
 				04F3348F1CD18E6B00AD068E /* AppDelegate.swift in Sources */,
 				04795D661CF5936700D891B8 /* RESTController.swift in Sources */,
+				04795D691CF59AB900D891B8 /* EnumsAndExtensions.swift in Sources */,
 				04F334BF1CD223FF00AD068E /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

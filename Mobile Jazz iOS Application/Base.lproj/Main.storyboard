@@ -53,9 +53,10 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" title="Values" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="Fh2-sj-ael" id="sKv-Sd-onK"/>
+                        <outlet property="valueNavItem" destination="mOI-FS-AaM" id="TRV-lY-6fg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
@@ -113,11 +114,39 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Keys" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="Keys" id="Zdf-7t-Un8">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Send" id="KD4-Cn-Db2">
+                            <connections>
+                                <segue destination="cas-UB-xa3" kind="show" identifier="sendData" action="showDetailViewController:sender:" id="n04-A8-Cce"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sendButton" destination="KD4-Cn-Db2" id="AB4-ro-r8J"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="709" y="-630"/>
+        </scene>
+        <!--Sent Data-->
+        <scene sceneID="S6c-Qs-P5L">
+            <objects>
+                <viewController id="cas-UB-xa3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Xq-49-htC"/>
+                        <viewControllerLayoutGuide type="bottom" id="SQ0-dM-iX4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="02j-VR-rUk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sent Data" id="x4u-vv-w5e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cst-T3-dc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="-630"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -136,6 +165,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Tll-UG-LXB"/>
+        <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
 </document>

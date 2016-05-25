@@ -13,32 +13,7 @@ import Foundation
 
 let sharedDataInstance: RESTData = RESTData.sharedInstance
 
-enum Teams: String {
-    case android = "android"
-    case ios = "ios"
-    case windows = "windows"
-    case backend = "backend"
-    case frontend = "frontend"
-    case design = "design"
-}
 
-/** Set of all the keys to be passed in the POST JSON request
- 
- name: Your real name as a String
- email: Your e-mail address where we can contact you as a String
- about: Why you think you’re the right person to get the job done, String
- urls: Array of Strings, with URLs describing yourself. You can include as many as you want, like your LinkedIn profile, GitHub, BitBucket, MasterBranch, etc.
- teams: Array of Strings, with one or many teams that apply to teams that you wish to apply for. The values must be amongst the following: android, ios, windows, backend, frontend, design
- */
-
-enum Keys: String {
-    case name = "name"
-    case email = "email"
-    case about = "about"
-    case urls = "urls"
-    case teams = "teams"
-    static let set: Set = [Keys.about, Keys.email, Keys.name, Keys.teams, Keys.urls]
-}
 
 /// Data Singleton `key:value` pair to be sent over a `POST` call
 class RESTData {
@@ -103,7 +78,7 @@ class RESTData {
         }
     }
     
-    private var teamsString: [String]? {
+    var teamsString: [String]? {
         get {
             if let teamList = self.teamsValue {
                 var tempTeams: [String] = []
@@ -114,6 +89,21 @@ class RESTData {
             } else {
                 return nil
             }
+        }
+    }
+    
+    func changeParameter (key: Keys, value: AnyObject) {
+        switch key {
+        case .name:
+            sharedDataInstance.nameValue = value as? String
+        case .email:
+            sharedDataInstance.emailValue = value as? String
+        case .about:
+            sharedDataInstance.aboutValue = value as? String
+        case .urls:
+            sharedDataInstance.urlsValue = value as? [String]
+        case .teams:
+            sharedDataInstance.teamsValue = value as? [Teams]
         }
     }
     //TODO: Add better logic for case by case scenario of nils for the member variable optionals to let user know where they need to add info for the application process
