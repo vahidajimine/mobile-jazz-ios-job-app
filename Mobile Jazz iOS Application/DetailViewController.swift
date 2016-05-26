@@ -92,8 +92,28 @@ class DetailViewController: UIViewController, UITextViewDelegate {
         case .urls:
             sharedDataInstance.changeParameter(key, value: value.characters.split{$0 == "\n"}.map(String.init) )
         case .teams:
-            //TODO: Add checks for each parameter and teams
-            sharedDataInstance.changeParameter(key, value: value)
+            let teamsApply = value.characters.split{$0 == "\n"}.map(String.init)
+            var teams: [Teams]? = []
+            for line in teamsApply {
+                switch line {
+                case Teams.android.rawValue:
+                    teams?.append(Teams.android)
+                case Teams.backend.rawValue:
+                    teams?.append(Teams.backend)
+                case Teams.design.rawValue:
+                    teams?.append(Teams.design)
+                case Teams.frontend.rawValue:
+                    teams?.append(Teams.frontend)
+                case Teams.ios.rawValue:
+                    teams?.append(Teams.ios)
+                case Teams.windows.rawValue:
+                    teams?.append(Teams.windows)
+                default:
+                    teams = nil
+                    return
+                }
+            }
+            sharedDataInstance.changeParameter(key, value: teams)
         default:
             sharedDataInstance.changeParameter(key, value: value)
         }

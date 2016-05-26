@@ -24,6 +24,8 @@ enum Teams: String {
     case backend = "backend"
     case frontend = "frontend"
     case design = "design"
+    static let set: Set = [Teams.android, Teams.backend, Teams.design, Teams.frontend, Teams.ios, Teams.windows]
+    
 }
 
 /** Set of all the keys to be passed in the POST JSON request

@@ -115,7 +115,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Keys" id="Zdf-7t-Un8">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Send" id="KD4-Cn-Db2">
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="KD4-Cn-Db2">
                             <connections>
                                 <segue destination="cas-UB-xa3" kind="show" identifier="sendData" action="showDetailViewController:sender:" id="n04-A8-Cce"/>
                             </connections>
@@ -132,7 +132,7 @@
         <!--Sent Data-->
         <scene sceneID="S6c-Qs-P5L">
             <objects>
-                <viewController id="cas-UB-xa3" sceneMemberID="viewController">
+                <viewController id="cas-UB-xa3" customClass="SentViewController" customModule="Mobile_Jazz_iOS_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Xq-49-htC"/>
                         <viewControllerLayoutGuide type="bottom" id="SQ0-dM-iX4"/>
@@ -140,9 +140,26 @@
                     <view key="view" contentMode="scaleToFill" id="02j-VR-rUk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Sending Data...." translatesAutoresizingMaskIntoConstraints="NO" id="tfJ-ii-g9D">
+                                <rect key="frame" x="20" y="72" width="560" height="508"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SQ0-dM-iX4" firstAttribute="top" secondItem="tfJ-ii-g9D" secondAttribute="bottom" constant="20" id="KGc-gD-Pbt"/>
+                            <constraint firstItem="tfJ-ii-g9D" firstAttribute="top" secondItem="1Xq-49-htC" secondAttribute="bottom" constant="8" id="KhB-ON-jZM"/>
+                            <constraint firstItem="tfJ-ii-g9D" firstAttribute="leading" secondItem="02j-VR-rUk" secondAttribute="leadingMargin" id="jlh-Ku-aFv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tfJ-ii-g9D" secondAttribute="trailing" id="zL4-xK-o4K"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sent Data" id="x4u-vv-w5e"/>
+                    <connections>
+                        <outlet property="resultTextView" destination="tfJ-ii-g9D" id="eZx-4t-hmT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cst-T3-dc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

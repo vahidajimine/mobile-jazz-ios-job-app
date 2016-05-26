@@ -72,8 +72,11 @@ class RESTData {
                 false : self.nameValue == nil ?
                 false : self.teamsValue == nil ?
                 false : self.urlsValue == nil ?
-                false : self.teamsValue?.count > 0 ?
-                false : self.urlsValue?.count > 0 ?
+                false : self.teamsValue?.count < 1 ?
+                false : self.urlsValue?.count < 1 ?
+                false : self.aboutValue! == "" ?
+                false : self.nameValue! == "" ?
+                false : self.emailValue! == "" ?
                 false : true
         }
     }
@@ -92,7 +95,7 @@ class RESTData {
         }
     }
     
-    func changeParameter (key: Keys, value: AnyObject) {
+    func changeParameter (key: Keys, value: Any) {
         switch key {
         case .name:
             sharedDataInstance.nameValue = value as? String

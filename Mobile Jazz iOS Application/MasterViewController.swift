@@ -93,6 +93,7 @@ class MasterViewController: UITableViewController, UITextViewDelegate {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
     }
     
+    
     //MARK: - UITextViewDelegate
     
     func textViewDidEndEditing(textView: UITextView) {
@@ -100,6 +101,8 @@ class MasterViewController: UITableViewController, UITextViewDelegate {
     }
     
     //TODO: Enable Send Button after everything is true
-
+    override func didMoveToParentViewController(parent: UIViewController?) {
+        self.sendButton.enabled = sharedDataInstance.isDataReady
+    }
 }
 
