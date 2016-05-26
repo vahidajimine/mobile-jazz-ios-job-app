@@ -28,14 +28,16 @@ class SentViewController: UIViewController, RESTControllerProtocol {
     }
     
     func didReceiveAPIResults(results: [String : AnyObject]!, url: String) {
-        resultText = String(results)
+        self.resultText = "Data was successfully sent with response:\n\n"
+        self.resultText += String(results)
         self.resultTextView.text = self.resultText
         self.resultTextView.scrollEnabled = !self.resultTextView.scrollEnabled
         self.resultTextView.scrollEnabled = !self.resultTextView.scrollEnabled
     }
     
     func didNotReceiveAPIResults(error: String, url: String) {
-        resultText = error
+        self.resultText = "Data sent had an error:\n\n"
+        self.resultText = error
         self.resultTextView.text = self.resultText
         self.resultTextView.scrollEnabled = !self.resultTextView.scrollEnabled
         self.resultTextView.scrollEnabled = !self.resultTextView.scrollEnabled
